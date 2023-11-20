@@ -1,0 +1,481 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --red: #CD3D0F;
+    --blue:#00246E;
+    --light-blue: #0070D1;
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-gray: #222;
+    --teal: #00AA9E;
+}
+
+body{
+   line-height: 1.25;
+   width: 1280px;
+   font-family: sans-serif;
+}
+
+
+.logo{
+    width: 6%;
+    height: 60px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.sony{
+    width: 10%;
+    position: static;
+    margin-top: 2rem;
+    height: 30px;
+    margin-left: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    left: 30rem;
+    margin-top: 40px;
+}
+
+nav a{
+    padding-right: 40px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.3em;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+nav a:hover{
+    color: var(--light-blue);
+}
+.ps5 img{
+    width: 113.75%;
+    height: 600px;
+    padding-bottom: 2em;
+}
+
+
+.accessories img{
+    width: 100%;
+    height: 600px;
+}
+
+header{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h1,.hidden-text{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+nav{
+    text-align: center;
+}
+
+.imgTab img{
+    width: 25%;
+}
+#spider img{
+    height: 400px;
+}
+#miles img{
+height: 400px;
+}
+
+form p{
+    visibility: hidden;
+    color: var(--red);
+}
+
+footer{
+    background-image: url("playstation\ background.jpeg");
+    height: 280px;
+    background-size: cover;
+    width: 113.75%;
+    color: var(--white);
+    text-align: center;
+}
+
+.ps5 h2{
+    position: absolute;
+    top: 9rem;
+    color: #fff;
+    font-size: 3.2em;
+    font-weight: lighter;
+    padding: 40px;
+   
+}
+
+.ps5 p{
+    position: absolute;
+    top: 15em;
+    color: #fff;
+    padding: 40px;
+    padding-top:10px;
+}
+.ps5 input{
+    position: absolute;
+    top: 30em;
+    padding: 10px;
+    text-align: center;
+    left:5rem;
+    color: #fff;
+    background-color: var(--red);
+    border-style: none;
+    border-radius: 1rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.accessories{
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.accessories h2{
+   font-size: 3.2rem;
+   position: absolute;
+   top: 110rem;
+   left: 26rem;
+   font-weight: 100;
+   padding-top: 2em;
+}
+p{
+    font-size: 1.2rem;
+}
+.accessories p{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    margin-top: -150px;
+    margin-left: 100px;
+}
+
+.accessories a{
+    text-decoration: none;
+    color: #00439C;
+}
+
+.accessories a:hover{
+    color: var(--light-blue);
+    text-decoration: underline var(--light-blue);
+}
+
+form{
+    display: block;
+	width: 350px;
+	margin: 0 auto;
+	color: var(--black);
+	font-size: 1.3em;
+    padding-top: 120px;
+    padding-left: 8em;
+}
+.forms input{
+    display: block;
+    width: 95%;
+    font-size: 1em;
+	border: 1px solid #222;
+	height: 1.5em;
+}
+
+.forms label{
+        display: block;
+        width: 95%;
+        padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+    font-size: 1.3rem;
+}
+
+.required{
+    display: inline-block;
+    color: #DE0B63;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  fieldset{
+	border: 3px solid var(--light-blue);
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: flex;
+    border-radius: 1em;
+    font-size: 1.3rem;
+    accent-color:var(--blue)
+}
+
+.forms input[type=submit]{
+	padding: 0.75em;
+	width: 70%;
+	height: auto;
+	margin-left: 15%;
+	color: #fff;
+	background-color: var(--red);
+	border: none;
+	font-family: sans-serif;
+    border-radius: 20px;
+    border-style: none;
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow-lg);
+    font-weight: 200;
+    margin-bottom: 2em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+textarea{
+	width: 100%;
+	height: 8em;
+	margin-bottom: 1em;
+}
+.forms input[type="text"], .forms input[type="email"], .forms input[type="tel"]{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    background: none;
+    outline: none;
+    border: 3px solid var(--light-blue);
+    box-shadow: var(--box-shadow-sm);
+    line-height: 1;
+    height: 2.5rem;
+    border-radius: 1em;
+    margin-bottom: 1em;
+  }
+
+  ::-webkit-input-placeholder{
+    color: var(--black);
+    font-size: 1rem;
+  }
+  textarea{
+    border: 3px solid var(--light-blue);
+    border-radius: 1em;
+    margin-top: 0.1em;
+  }
+
+  form h3{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration:underline var(--light-blue);
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  footer h3{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 1em;
+    font-weight: bold;
+   
+  }
+
+  svg{
+    padding:0.75em;
+    width: 80px;
+    height: 80px;
+    margin-left: 5em;
+    position: relative;
+    right: 7.75em;
+    padding-bottom: 1.5em;
+  }
+  svg:hover{
+    stroke: var(--light-blue);
+  }
+  footer small{
+    font-size: 1.2rem;
+    padding-top: 2em;
+  }
+  footer img{
+    width: 8%;
+    height: 80px;
+    position: relative;
+    float: left;
+    padding-left: 3em;
+    bottom: 5em;
+  }
+  .white-sony{
+    width: 10%;
+    position: static;
+    margin-top: -3rem;
+    height: 30px;
+    margin-left: 1rem;
+    bottom: 5em;
+  }
+  [data-content] {
+    display: none;
+  }
+  
+  .switch[data-content] {
+    display: block;
+  }
+  #spider img{
+    width: 400px;
+    height: 550px;
+    padding-left: 6em;
+    filter: drop-shadow(-10px 10px 20px var(--black));
+  }
+  #miles img{
+    width: 400px;
+    height: 550px;
+    padding-left: 6em;
+    filter: drop-shadow(-10px 10px 20px var(--black));
+  }
+  #ragnarok img{
+    width: 450px;
+    padding-left: 6em;
+    height: 550px;
+    filter: drop-shadow(-10px 10px 20px var(--black));
+  }
+  .displays {
+    font-size: 1.5rem;
+    display: flex;
+    padding-bottom: 3em;
+    
+  }
+  .displays li{
+    padding-right: 4em;
+    cursor: pointer;
+    padding-left: 5em;   
+    border-bottom: 0.25rem solid var(--white);
+    padding-bottom: 2rem;
+    font-weight: 700;
+  }
+  .displays li:hover{
+    color: var(--red);
+  }
+  .displayTab.switch{
+    color: var(--red);
+    text-decoration: overline var(--white);
+  }
+  
+  .imgContent{
+    background-image: url("background.png");
+    height: 870px;
+    background-size: cover;
+    width: 110%;
+    color: var(--white);
+    padding-top: 3em;
+    padding-left: 3em;
+  }
+  #spider h2{
+    font-size: 2.5rem;
+    float: right;
+    margin-right: 10em;
+  }
+
+  #spider p{
+    position: relative;
+    padding-left: 40em;
+    bottom: 24em;
+    padding-right: 3em;
+  }
+
+  #miles h2{
+    font-size: 2.5rem;
+    float: right;
+    margin-right: 4.5em;
+  }
+  #miles p{
+    position: relative;
+    padding-left: 40em;
+    bottom: 24em;
+    padding-right: 10em;
+  }
+
+  #ragnarok h2{
+    font-size: 2.5rem;
+    float: right;
+    margin-right: 6.2em;
+  }
+  #ragnarok p{
+    position: relative;
+    padding-left: 40em;
+    bottom: 24em;
+    padding-right: 10em;
+  }
+  .release{
+    padding-bottom: 2em;
+  }
+  .exc {
+    font-size: 2.5rem;
+    padding-bottom: 1.5em;
+    text-transform: uppercase;
+  }
+  .game{
+    text-align: center;
+    background-image: url("playstation\ background.jpeg");
+    color: var(--red);
+    width: 113.75%;
+    height: 300px;
+    padding-top: 7em;
+   
+  }
+  h3{
+    font-size: 2rem;
+  }
+  
+  
+  
+  
+  
+  
+
+  
