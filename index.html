@@ -14,22 +14,24 @@
     <header>
         <h1>PlayStation</h1>
         <img src="playstationlogo2.png" alt="logo" class="logo">
-        <img src="sonylogo.png" alt="sony logo" class="sony">
+        <img src="sonylogo3.png" alt="sony logo" class="sony">
 
         <nav>
             <ul>
-             <li><a href="#">Games</a></li>
-			<li><a href="#">Accessories</a></li>
-			<li><a href="#">News</a></li>
-            <li><a href="#">Store</a></li>
-			<li><a href="#">PS5</a></li>
-			<li><a href="#">PS4</a></li>
+             <li><a href="#" class="list">Games</a></li>
+			<li><a href="#" class="list">Accessories</a></li>
+			<li><a href="#" class="list">News</a></li>
+            <li><a href="#" class="list">Store</a></li>
+			<li><a href="#" class="list">PS5</a></li>
+			<li><a href="#" class="list">PS4</a></li>
             </ul>
         </nav>
+        <button id="button">Light/Dark Mode</button>
     </header>
     <main>
+        
     <section class="ps5">
-        <img src="ps5s.jpeg" alt="ps5 console">
+        <img src="ps5s.jpeg" alt="ps5 console" class="images1">
         <h2>Introducing the PS5 Consoles</h2>
         <p>Experience an all new generation of incredible <br>PlayStation games, either in disk or digital</p>
         <input type="submit" name="mySubmit" id="mySubmit" value="Buy now">
@@ -43,7 +45,7 @@
         <li data-display="#ragnarok" class="displayTab">God Of War Ragnarok</li>
       </ul>
     </div>
-      <div class="tab-content">
+      <div class="imageSwitch">
         <div id="spider" data-content class="switch">
           <h2>Spider-Man 2</h2>
           <img src="spiderman1.jpeg" alt="marvels spider-man 2 with spider-man and miles morales">
@@ -66,24 +68,26 @@
     </section>
 
     <section class="accessories">
-        <img src="accessories.jpg" alt="accessories">
+        <img src="accessories.jpeg" alt="accessories" class="images">
         <h2>PlayStation Accessories</h2>
-        <p> Build your perfect gaming setup with <a href="#">controllers</a>, <a href="#">headsets</a> and other accessories for your PS5™ or PS4™ console.</p>
+        <p> Build your perfect gaming setup with <a href="#" class="word">controllers</a>, <a href="#" class="word">headsets</a> <br>and other accessories for your PS5™ or PS4™ console.</p>
     </section>
 
     <section class="game">
         <h3>Play! Guess The Number</h3>
         <p>Play the game by guessing a number between 1-10 and try to to match the number generated.</p>
         <P>Play for a chance to earn 50% off your next purchase!</P>
-    <div id="guessGame">
-        <label for="guessGame">Enter your Guess:</label>
-        <input type="text" id="guessGame" name="guessingGame">
+   <div class="inputs">
+        <label for="guess1">Enter Your Guess:</label>
+        <input type="number" id="guess1" class="guess1">
+        <input type="submit" value="Submit Guess" id="submitGuess">
 
-        <input type="submit" name="submit" id="submit" value="Submit Form">
+        <div class="result">
+            <span id="guess"></span>
+            <span id="message"></span>
+        </div> 
     </div>
-
     </section>
-
 
     <section class="forms">
         <form method="post" action="https://wp.zybooks.com/form-viewer.php">
@@ -111,9 +115,9 @@
             <span class="radioInput"></span>
             <input type="radio" id="prefEmail" name="Preferred Contact Method" value="Email">
                 </fieldset>	
-            <div id="message">
+            <div id="comment">
             <label for="message">Comments <span class="required">*</label>
-            <textarea id="message"></textarea>
+            <textarea id="comments"></textarea>
             <p>Please add a comment</p>
             </div>
             <input type="submit" name="mySubmit" id="mySubmit" value="Submit Form">

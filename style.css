@@ -11,57 +11,69 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 :root{
     --red: #CD3D0F;
-    --blue:#00246E;
+    --blue:#00439C;
     --light-blue: #0070D1;
     --white: #FFFFFF;
     --black: #000000;
     --dark-gray: #222;
     --teal: #00AA9E;
+    --light-black: #1f1f1f;
 }
+
+
 
 body{
    line-height: 1.25;
-   width: 1280px;
    font-family: sans-serif;
+   background-color: var(--white);
+   color: var(--black);
+}
+main, header, footer{
+    font-family: sans-serif;
+    width: 100%;
 }
 
+main{
+    max-width: 1280px;
+    width: 100%;
+}
 
 .logo{
     width: 6%;
@@ -73,10 +85,10 @@ body{
 }
 
 .sony{
-    width: 10%;
+    width: 12%;
     position: static;
-    margin-top: 2rem;
-    height: 30px;
+    margin-top: -1.4rem;
+    height: 150px;
     margin-left: 1rem;
 }
 
@@ -88,7 +100,7 @@ nav ul {
     margin-top: 40px;
 }
 
-nav a{
+.list{
     padding-right: 40px;
     text-decoration: none;
     color: var(--black);
@@ -97,25 +109,26 @@ nav a{
     font-weight: 400;
 }
 
-nav a:hover{
+.list:hover{
     color: var(--light-blue);
 }
 .ps5 img{
-    width: 113.75%;
+    width: 112.5%;
     height: 600px;
     padding-bottom: 2em;
 }
 
 
 .accessories img{
-    width: 100%;
-    height: 600px;
+    width: 60%;
+    height: 450px;
+    display: inline;
 }
 
 header{
     display: flex;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: -2rem;
 }
 
 h1,.hidden-text{
@@ -126,7 +139,16 @@ width:1px;
 height:1px;
 overflow:hidden;
 }
-
+h1:focus{
+    position:static;
+    width:auto;
+    height:auto;
+    }
+.hidden-text:focus{
+    position:static;
+    width:auto;
+    height:auto;
+    }
 nav{
     text-align: center;
 }
@@ -150,7 +172,7 @@ footer{
     background-image: url("playstation\ background.jpeg");
     height: 280px;
     background-size: cover;
-    width: 113.75%;
+    width: 100%;
     color: var(--white);
     text-align: center;
 }
@@ -187,17 +209,17 @@ footer{
 }
 
 .accessories{
-    text-align: center;
-    padding-bottom: 100px;
-    padding-top: 30px;
-    padding-left: 20px;
+   
+    padding-bottom: 80px;
+    padding-top: 80px;
+   
 }
 
 .accessories h2{
-   font-size: 3.2rem;
+   font-size: 3rem;
    position: absolute;
-   top: 110rem;
-   left: 26rem;
+   top: 105rem;
+   left: 17.25em;
    font-weight: 100;
    padding-top: 2em;
 }
@@ -206,14 +228,17 @@ p{
 }
 .accessories p{
     font-size: 1.3rem;
-    margin-bottom: 20px;
-    margin-top: -150px;
-    margin-left: 100px;
+   
+    position: relative;
+  float: right;
+    bottom: 16em;
+    left: 4em;
+    
 }
 
-.accessories a{
+.word{
     text-decoration: none;
-    color: #00439C;
+    color: var(--blue);
 }
 
 .accessories a:hover{
@@ -225,7 +250,7 @@ form{
     display: block;
 	width: 350px;
 	margin: 0 auto;
-	color: var(--black);
+	
 	font-size: 1.3em;
     padding-top: 120px;
     padding-left: 8em;
@@ -279,7 +304,7 @@ form{
     font-weight: 200;
     margin-bottom: 2em;
     cursor: pointer;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 textarea{
@@ -410,10 +435,9 @@ textarea{
     background-image: url("background.png");
     height: 870px;
     background-size: cover;
-    width: 110%;
+    width: 112.5%;
     color: var(--white);
     padding-top: 3em;
-    padding-left: 3em;
   }
   #spider h2{
     font-size: 2.5rem;
@@ -458,20 +482,108 @@ textarea{
     font-size: 2.5rem;
     padding-bottom: 1.5em;
     text-transform: uppercase;
+    padding-left: 2em;
   }
   .game{
     text-align: center;
-    background-image: url("playstation\ background.jpeg");
-    color: var(--red);
-    width: 113.75%;
-    height: 300px;
+    background-image: url("shapes.jpg");
+    color: var(--white);
+    width: 112.5%;
+    height: 340px;
     padding-top: 7em;
-   
+    background-size: cover;
+  }
+  .game h3{
+    padding-bottom: 0.1em;
+  }
+  .game p{
+    padding: 0.5em;
   }
   h3{
     font-size: 2rem;
   }
+  .game label{
+    font-size: 1.4rem;
+  }
+  .inputs{
+   padding-top: 4em;
+  }
+  .guess1{
+    width: 5%;
+   padding: 0.5em;
+  }
+  #submitGuess{
+    background-color: var(--red);
+    color: var(--white);
+    border-style: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 1rem;
+    width: 8rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 1.5em;
+  }
+  #message{
+    position: relative;
+    top: 1.5em;
+    right: 3em;
+    font-size: 1.5rem;
+  }
+  #guess{
+    position: relative;
+    top: -5em;
+    left: 5.25em;
+  }
+  #switchMode{
+    float: right;
+  }
+
+
+  #button{
+    background-color: #1F1F1F;
+    color: var(--light-blue);
+    height: 60px;
+    border-style: none;
+    border-radius: 35px;
+    padding: 5px;
+    font-size: 0.75rem;
+    margin-left: 990px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    width: 100px;
+    font-weight: 700;
+  }
+
+  .darkMode .list{
+    background-color: var(--light-black);
+    color: white;
+  }
+  .darkMode .list:hover{
+    color: var(--light-blue);
+  }
+  .darkMode header{
+    background-color: var(--light-black);
+  }
+  .darkMode{
+    background-color: var(--light-black);
+    color: var(--white);
+  }
+  .darkMode #button{
+    background-color: var(--white);
+  }
+  .darkMode .word{
+    color: var(--teal);
+  }
+.darkMode ::-webkit-input-placeholder{
+    color: var(--white);
+  }
   
+
+
+
+  
+    
   
   
   
