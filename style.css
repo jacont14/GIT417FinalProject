@@ -163,7 +163,7 @@ nav{
 height: 400px;
 }
 
-form p{
+.comment{
     visibility: hidden;
     color: var(--red);
 }
@@ -538,7 +538,30 @@ textarea{
   #switchMode{
     float: right;
   }
+.hidden{
+  height: 1rem;
+  margin: 0;
+  visibility: hidden;
+}
 
+form p{
+  color: var(--red);
+}
+input[type="text"].error, input[type="email"].error, input[type="tel"].error, textarea.error{
+  border: 3px solid var(--red);
+}
+
+#formErrors {
+  color: var(--red);
+}
+
+#pref{
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--red);
+  height: 1.5rem;
+}
 
   #button{
     background-color: #1F1F1F;
