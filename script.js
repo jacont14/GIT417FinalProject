@@ -65,6 +65,7 @@ document.getElementById("button").addEventListener("click", ChangeMode);
 
 
 
+
 let errMessages = {
     success: "The form was submitted successfully",
     failure: "There was an issue when trying to submit the form, please correct your errors and try again",
